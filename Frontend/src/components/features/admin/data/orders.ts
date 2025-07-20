@@ -1,0 +1,105 @@
+import { Order } from "@/src/types";
+import { Product } from "@/src/types";
+
+const mockProducts: Product[] = [
+    {
+        id: 1,
+        productName: "아메리카노",
+        price: 4000,
+        imageUrl: "https://www.biz-con.co.kr/upload/images/202501/400_20250122164028679_2.jpg",
+        description: "진한 에스프레소에 뜨거운 물을 넣은 클래식 커피",
+        category: "커피",
+        orderable: false,
+        createdDate: "2025-07-19T15:59:15.445474",
+        modifiedDate: "2025-07-19T15:59:15.445474",
+    },
+    {
+        id: 2,
+        productName: "카페라떼",
+        price: 4500,
+        imageUrl: "https://dh.aks.ac.kr/Edu/wiki/images/thumb/8/85/1893535467_J78QnDCd_C4ABC6E4B6F3B6BC.jpg/300px-1893535467_J78QnDCd_C4ABC6E4B6F3B6BC.jpg",
+        description: "부드러운 우유와 에스프레소가 조화로운 커피",
+        category: "커피",
+        orderable: true,
+        createdDate: "2025-07-19T15:59:15.445474",
+        modifiedDate: "2025-07-19T15:59:15.445474",
+    },
+    {
+        id: 3,
+        productName: "치즈케이크",
+        price: 6000,
+        imageUrl: "https://www.jewon1986.com:45131/data/file/aid_1/983012508_Ebm5lwLu_7c182df111d37985163cef51f41b109fed0616d8.png",
+        description: "진하고 고소한 맛이 일품인 뉴욕 스타일 치즈케이크",
+        category: "디저트",
+        orderable: false,
+        createdDate: "2025-07-19T15:59:15.445474",
+        modifiedDate: "2025-07-19T15:59:15.445474",
+    },
+    {
+        id: 4,
+        productName: "초코쿠키",
+        price: 2500,
+        imageUrl: "https://m.tlj.co.kr/data/product/2025-5-21_event(2).jpg",
+        description: "달콤한 초콜릿 칩이 듬뿍 박힌 바삭한 쿠키",
+        category: "디저트",
+        orderable: true,
+        createdDate: "2025-07-19T15:59:15.445474",
+        modifiedDate: "2025-07-19T15:59:15.445474",
+    },
+    {
+        id: 5,
+        productName: "바닐라 라떼",
+        price: 3000,
+        imageUrl: "https://img.danawa.com/prod_img/500000/758/029/img/25029758_1.jpg?_v=20240206102448",
+        description: "바닐라 시럽과 우유가 어우러진 부드러운 라떼",
+        category: "커피",
+        orderable: true,
+        createdDate: "2025-07-19T15:59:15.445474",
+        modifiedDate: "2025-07-19T15:59:15.445474",
+    },
+];
+
+export const ORDERS: Order[] = [
+  {
+    id: "1",
+    userName: "김철수",
+    address: "서울시 강남구 테헤란로 123",
+    phoneNumber: "010-1234-5678",
+    items: [
+      { product: mockProducts[0], quantity: 2, price: mockProducts[0].price },
+      { product: mockProducts[2], quantity: 1, price: mockProducts[2].price },
+      { product: mockProducts[0], quantity: 2, price: mockProducts[0].price },
+      { product: mockProducts[0], quantity: 2, price: mockProducts[0].price },
+      { product: mockProducts[0], quantity: 2, price: mockProducts[0].price },
+      { product: mockProducts[0], quantity: 2, price: mockProducts[0].price },
+      { product: mockProducts[0], quantity: 2, price: mockProducts[0].price },
+    ],
+    totalPrice: mockProducts[0].price * 2 + mockProducts[2].price * 1,
+    status: "주문 접수",
+  },
+  {
+    id: "2",
+    userName: "이영희",
+    address: "경기도 성남시 분당구 판교역로 456",
+    phoneNumber: "010-9876-5432",
+    items: [
+      { product: mockProducts[1], quantity: 1, price: mockProducts[1].price },
+      { product: mockProducts[3], quantity: 3, price: mockProducts[3].price },
+      { product: mockProducts[3], quantity: 3, price: mockProducts[3].price },
+    ],
+    totalPrice: mockProducts[1].price * 1 + mockProducts[3].price * 3,
+    status: "준비중",
+  },
+  {
+    id: "3",
+    userName: "박지성",
+    address: "인천시 연수구 송도국제대로 789",
+    phoneNumber: "010-5555-4444",
+    items: [
+      { product: mockProducts[4], quantity: 1, price: mockProducts[4].price },
+    ],
+    totalPrice: mockProducts[4].price * 1,
+    status: "배송완료",
+  },
+];
+
