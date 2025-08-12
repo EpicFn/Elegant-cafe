@@ -3,7 +3,6 @@
 1주일이라는 짧은 기간 동안 5명의 팀원이 협업하며, 기능 구현을 넘어 지속 가능하고 효율적인 협업 문화를 구축하는 것을 핵심 목표로 삼았습니다.
 
 <br/>
-<br/>
 
 # 🛠️ Teck Stack
 <img src="https://img.shields.io/badge/next.js-000000?style=flat-squre&logo=nextdotjs&logoColor==white"/> <img src="https://img.shields.io/badge/typescript-3178C6?style=flat-squre&logo=typescript&logoColor==white"/> <img src="https://img.shields.io/badge/tailwindcss-06B6D4?style=flat-squre&logo=tailwindcss&logoColor==white"/>
@@ -12,7 +11,6 @@
 
 <img src="https://img.shields.io/badge/h2-09476B?style=flat-squre&logo=h2database&logoColor==white"/> <img src="https://img.shields.io/badge/mysql-4479A1?style=flat-squre&logo=mysql&logoColor==white"/> <img src="https://img.shields.io/badge/gcs-AECBFA?style=flat-squre&logo=googlecloudstorage&logoColor==white"/>
 
-<br/>
 <br/>
 
 # 📄 주요 기능
@@ -29,7 +27,6 @@
 - 전체 주문 목록 조회
 - 주문 상태 변경 (예: 준비 중 → 배송 완료)
 
-<br/>
 <br/>
 
 # 🎥 Demo
